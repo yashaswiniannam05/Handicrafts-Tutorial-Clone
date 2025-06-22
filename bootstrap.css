@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    width: 100%;
+    height: 6em;
+    position:sticky;
+}
+
+.nav_brand{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height:70px;
+    font-size: 2em;
+    font-family:cursive;
+    font-weight: 700;
+    background-color: brown;
+    padding: 0.3em;
+    color: bisque;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.navbar_content{
+    width:100%;
+    display: block;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+#search_bar{
+    height:3rem;
+}
+
+.search_button{
+    color:#000000A6;
+    border-color: #000000A6;
+    height: 2rem;
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.search_button:hover{
+    background-color: #000000A6;
+}
+
+.nav_tab{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.nav_tab:hover{
+    color: whitesmoke;
+}
+
+.menu_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 80px;
+    justify-self:flex-start;
+    text-align: left;
+}
+
+#hero_paragraph{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.item_name{
+    font-size: 3rem;
+}
+
+#crafts_n_diy{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.gallery_row{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.crafts_items:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgb(191, 187, 189); 
+} 
+
+.footer{
+    margin-top: 2rem;
+    width:100%;
+    padding-bottom: 2rem;
+}
+
+.footer_row1{
+    display: flex;
+}
+
+.nav_div{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 200px) and (max-width: 991px){
+    .menu_button{
+        background-color: brown;
+        opacity: 0.8;
+    }
+    .menu_three_lines{
+        color: white;
+        padding: 1px;
+    }
+    .collapsed_navbar{
+        background-color: rgb(247, 163, 177);
+        opacity: 0.99;
+        border-radius: 15px;
+    }
+    .collapsed_navbar a{
+        color: brown;
+        font-weight: 700;
+        margin-left: 20px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1140px) and (min-width: 880px){
+    .nav_brand{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 881px) and (min-width: 775px){
+    .nav_brand{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 774px) and (min-width: 718px){
+    .nav_brand{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 717px) and (min-width: 655px){
+    .nav_brand{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 654px) and (min-width: 554px){
+    .nav_brand{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 608px) and (min-width: 599px){
+    .nav_brand{
+        font-size: 0.9em;
+    }
+    .menu_button{
+        width: 2.5em;
+    }
+}
+
+@media (max-width: 598px) and (min-width: 585px){
+    .nav_brand{
+        font-size: 0.9em;
+        /* flex-wrap: wrap; */
+    }
+    .menu_button{
+        width: 2em;
+    }
+}
+
+@media (max-width: 584px) and (min-width: 579px){
+    .nav_brand{
+        font-size: 0.9em;
+        /* flex-wrap: wrap; */
+    }
+    .menu_button{
+        width: 1.8em;
+    }
+}
+
+@media (max-width: 580px) and (min-width: 400px){
+    .nav_brand{
+        font-size: 0.9em;
+        /* flex-wrap: wrap; */
+    }
+    .menu_button{
+        width: 2em;
+        -ms-flex-align: center;
+
+    }
+    #search_bar{
+        width: 100%;
+    }
+    .search_outer_div{
+        width: 50%;
+    }
+    .navbar_content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 504px){
+    .nav_brand{
+        font-size: 0.8em;
+        /* flex-wrap: wrap; */
+    }
+    .menu_button{
+        width: 1.8em;
+    }
+}
+
+@media (max-width: 503px) and (min-width: 497px){
+    .nav_brand{
+        font-size: 0.8em;
+        /* flex-wrap: wrap; */
+    }
+    .menu_button{
+        width: 1.8em;
+    }
+}
+
+@media (max-width: 496px) and (min-width: 401px){
+    .nav_brand{
+        font-size: 0.7em;
+        /* flex-wrap: wrap; */
+    }
+    .menu_button{
+        width: 1.8em;
+    }
+}
+
+
+@media (max-width: 400px) and (min-width: 300px){
+    .nav_brand{
+        font-size: 2em;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 7px;
+        /* position: fixed; */
+    }
+    .menu_button{
+        width: 1.8em;
+        /* position: fixed; */
+    }
+    .navbar_content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 20em;
+    }
+    .search_outer_div{
+        width: 80%;
+        margin-top: 10px;
+        /* position: fixed; */
+    }
+}
